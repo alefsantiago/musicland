@@ -1,7 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Varela+Round&display=swap');
 body {
-  height: 100%;
-  margin: 0;
   font: 400 17px 'Varela Round', sans-serif;
   background-color: #E5E6F0;
   overflow-x: hidden;
@@ -227,8 +225,6 @@ footer {
   display: inline-block;
   vertical-align: top;
 }
-
-/* Footer left */
 
 .footer-distributed .footer-left {
   width: 30%;
