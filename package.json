@@ -1,0 +1,34 @@
+{
+  "name": "musicland",
+  "version": "1.0.0",
+  "description": "Uma plataforma web para divulgação de musicos",
+  "main": "index.js",
+  "dependencies": {
+    "animate.css": "^3.7.2",
+    "bootstrap": "^4.4.1",
+    "jquery": "^3.4.1",
+    "jquery-validation": "^1.19.1",
+    "ladda": "^0.9.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "musica",
+    "tcc",
+    "banda",
+    "divulgação",
+    "indie"
+  ],
+  "author": "alefsantiago",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alefsantiago/musicland.git"
+  },
+  "bugs": {
+    "url": "https://github.com/alefsantiago/musicland/issues"
+  },
+  "homepage": "https://github.com/alefsantiago/musicland#readme"
+}
