@@ -44,7 +44,8 @@
                         nulla ea natus autem.
                     </p>
                     <div class="btn-inscreva">
-                        <a href="./cadusers.php"><button type="button" class="btn btn-outline-primary">Inscreva-se para Fãs</button></a> 
+                        <a href="./cadusers.php"><button type="button" class="btn btn-outline-primary">Inscreva-se para
+                                Fãs</button></a>
                     </div>
                     <hr>
                     <img class="users" src="../img/artistas.png">
@@ -54,7 +55,8 @@
                         nulla ea natus autem.
                     </p>
                     <div class="btn-inscreva">
-                       <a href="./cadartistas.php"><button type="button" class="btn btn-outline-primary">Inscreva-se para Artistas</button></a> 
+                        <a href="./cadartistas.php"><button type="button" class="btn btn-outline-primary">Inscreva-se
+                                para Artistas</button></a>
                     </div>
                     <hr>
                     <img class="users" src="../img/record.png">
@@ -64,7 +66,9 @@
                         nulla ea natus autem.
                     </p>
                     <div class="btn-inscreva">
-                        <button type="button" class="btn btn-outline-primary">Inscreva-se para Gravadoras</button>
+                        <a href="./cadgravadoras.php"><button type="button" class="btn btn-outline-primary">Inscreva-se
+                                para
+                                Gravadoras</button></a>
                     </div>
                 </div>
             </div>
@@ -72,7 +76,7 @@
     </div>
 
     <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
-        <a class="navbar-brand" href="../index.html">Music Land</a>
+        <a class="navbar-brand" href="../index.php">Music Land</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -81,16 +85,16 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="../index.html">Início</a>
+                    <a class="nav-link" href="../index.php">Início</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="../pages/quemsomos.html">Quem Somos</a>
+                    <a class="nav-link" href="../pages/quemsomos.php">Quem Somos</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Planos</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" href="../pages/contato.html">Contato <span
+                    <a class="nav-link active" href="../pages/contato.php">Contato <span
                             class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
@@ -183,13 +187,13 @@
             <h3>Music<span>Land</span></h3>
 
             <p class="footer-links">
-                <a href="../index.html">Início</a>
+                <a href="../index.php">Início</a>
                 |
-                <a href="../pages/quemsomos.html">Quem Somos</a>
+                <a href="../pages/quemsomos.php">Quem Somos</a>
                 |
                 <a href="#">Planos</a>
                 |
-                <a href="../pages/contato.html">Contato</a>
+                <a href="../pages/contato.php">Contato</a>
             </p>
 
             <p class="footer-company-name">© Musicland.com | Designed by Alef Santiago</p>

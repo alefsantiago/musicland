@@ -21,7 +21,7 @@
     <div class="btn-sign">
       <button type="button" class="btn btn-outline-primary" data-toggle="modal"
         data-target="#modalExemplo">Inscreva-se</button>
-      <button type="button" class="btn btn-outline-primary">Entrar</button>
+     <a href="pages/login.php"><button type="button" class="btn btn-outline-primary">Entrar</button></a> 
     </div>
   </div>
 
@@ -81,16 +81,16 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item">
-          <a class="nav-link active" href="index.html">Início <span class="sr-only">(current)</span></a>
+          <a class="nav-link active" href="index.php">Início <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="pages/quemsomos.html">Quem Somos</a>
+          <a class="nav-link" href="pages/quemsomos.php">Quem Somos</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Planos</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="pages/contato.html">Contato</a>
+          <a class="nav-link" href="pages/contato.php">Contato</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Divulgue</a>
@@ -362,13 +362,13 @@
       <h3>Music<span>Land</span></h3>
 
       <p class="footer-links">
-        <a href="index.html">Início</a>
+        <a href="index.php">Início</a>
         |
-        <a href="../pages/quemsomos.html">Quem Somos</a>
+        <a href="../pages/quemsomos.php">Quem Somos</a>
         |
         <a href="#">Planos</a>
         |
-        <a href="../pages/contato.html">Contato</a>
+        <a href="../pages/contato.php">Contato</a>
       </p>
 
       <p class="footer-company-name">© Musicland.com | Designed by Alef Santiago</p>
