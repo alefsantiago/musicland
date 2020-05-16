@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css?family=Varela+Round&display=swap');
+body, html {
+    margin: 0;
+    font: 400 17px 'Varela Round', sans-serif;
+    background-color: #E5E6F0;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.container img {
+    width: 120px;
+    height: 120px;
+}
+
+.lottie {
+    margin-top: 40px;
+    margin-left: 60px;
+    width: 350px;
+    height: 350px;
+}
+
+.lead {
+    font-size: 15px;
+}
