@@ -86,14 +86,14 @@
           <a class="nav-link" href="../index.php">Início</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" href="../pages/quemsomos.php">Quem Somos <span
+          <a class="nav-link active" href="../view/quemsomos.php">Quem Somos <span
               class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Planos</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="../pages/contato.php">Contato</a>
+          <a class="nav-link" href="../view/contato.php">Contato</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Divulgue</a>
@@ -191,11 +191,11 @@
       <p class="footer-links">
         <a href="../index.php">Início</a>
         |
-        <a href="../pages/quemsomos.php">Quem Somos</a>
+        <a href="../view/quemsomos.php">Quem Somos</a>
         |
         <a href="#">Planos</a>
         |
-        <a href="../pages/contato.php">Contato</a>
+        <a href="../view/contato.php">Contato</a>
       </p>
 
       <p class="footer-company-name">© Musicland.com | Designed by Alef Santiago</p>

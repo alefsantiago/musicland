@@ -1,5 +1,12 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+<?php
+
+include("../controller/conexao.php");
+$note = $_REQUEST['note'];
+?>
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="pt-br" xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
     <meta charset="UTF-8">
@@ -11,7 +18,7 @@
     <link rel="stylesheet" href="../node_modules/ladda/dist/ladda-themeless.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../css/contato.css">
-    <link rel="shortcut icon" href="../img/Logotipo Oficial.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../img/Logotipo Oficial.png">
 </head>
 
 <body>
@@ -20,14 +27,12 @@
         <a href="#" class="fa fa-twitter"></a>
         <a href="#" class="fa fa-instagram"></a>
         <div class="btn-sign">
-            <button type="button" class="btn btn-outline-primary" data-toggle="modal"
-                data-target="#modalExemplo">Inscreva-se</button>
+            <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#modalExemplo">Inscreva-se</button>
             <button type="button" class="btn btn-outline-primary">Entrar</button>
         </div>
     </div>
     <!-- Modal -->
-    <div class="modal fade" id="modalExemplo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-        aria-hidden="true">
+    <div class="modal fade" id="modalExemplo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
@@ -77,8 +82,7 @@
 
     <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
         <a class="navbar-brand" href="../index.php">Music Land</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
 
@@ -88,21 +92,19 @@
                     <a class="nav-link" href="../index.php">Início</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="../pages/quemsomos.php">Quem Somos</a>
+                    <a class="nav-link" href="../view/quemsomos.php">Quem Somos</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Planos</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" href="../pages/contato.php">Contato <span
-                            class="sr-only">(current)</span></a>
+                    <a class="nav-link active" href="../view/contato.php">Contato <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Divulgue</a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Navegar
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -113,8 +115,7 @@
                     </div>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Gênero
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -149,26 +150,23 @@
     <br>
     <br>
     <div class="container">
-        <form id="formContato" autocomplete="on">
+        <form autocomplete="on" action="../model/contact-email.php" method="post">
             <div class="row justify-content-center">
                 <div class="col-sm-12 col-md-6">
                     <div class="input-group m-1">
-                        <input type="text" name="email" value="" class="form-control" placeholder="Insira seu email"
-                            required="required" />
+                        <input type="text" name="email" value="" class="form-control" placeholder="Insira seu email" required="required" />
                     </div>
                     <div class="error"></div>
                 </div>
                 <div class="col-sm-12 col-md-6">
                     <div class="input-group m-1">
-                        <input type="text" name="celular" value="" class="form-control"
-                            placeholder="Insira seu celular" />
+                        <input type="text" name="nome" value="" class="form-control" placeholder="Insira seu nome" />
                     </div>
                     <div class="error"></div>
                 </div>
                 <div class="col-sm-12 col-md-12">
                     <div class="input-group m-1">
-                        <textarea rows="8" type="text" name="contate" value="" class="form-control"
-                            placeholder="Entre em contato" required="required"></textarea>
+                        <textarea rows="8" type="text" name="mensagem" value="" class="form-control" placeholder="Entre em contato" required="required"></textarea>
                     </div>
                     <div class="error"></div>
                 </div>
@@ -178,56 +176,56 @@
             </div>
         </form>
     </div>
-    <br>
-    <br>
-    <footer class="footer-distributed">
+        <br>
+        <br>
+        <footer class="footer-distributed">
 
-        <div class="footer-left">
-            <img src="../img/Logotipo Oficial.png">
-            <h3>Music<span>Land</span></h3>
+            <div class="footer-left">
+                <img src="../img/Logotipo Oficial.png">
+                <h3>Music<span>Land</span></h3>
 
-            <p class="footer-links">
-                <a href="../index.php">Início</a>
-                |
-                <a href="../pages/quemsomos.php">Quem Somos</a>
-                |
-                <a href="#">Planos</a>
-                |
-                <a href="../pages/contato.php">Contato</a>
-            </p>
+                <p class="footer-links">
+                    <a href="../index.php">Início</a>
+                    |
+                    <a href="../view/quemsomos.php">Quem Somos</a>
+                    |
+                    <a href="#">Planos</a>
+                    |
+                    <a href="../view/contato.php">Contato</a>
+                </p>
 
-            <p class="footer-company-name">© Musicland.com | Designed by Alef Santiago</p>
-        </div>
-
-        <div class="footer-center">
-            <div>
-                <i class="fa fa-map-marker"></i>
-                <p><span>866 - R. Cámbara Orli,
-                        Jardim Miray, Itaquaquecetuba-sp</span>
-                    08574-150</p>
+                <p class="footer-company-name">© Musicland.com | Designed by Alef Santiago</p>
             </div>
 
-            <div>
-                <i class="fa fa-phone"></i>
-                <p>+55 11-947889435</p>
+            <div class="footer-center">
+                <div>
+                    <i class="fa fa-map-marker"></i>
+                    <p><span>866 - R. Cámbara Orli,
+                            Jardim Miray, Itaquaquecetuba-sp</span>
+                        08574-150</p>
+                </div>
+
+                <div>
+                    <i class="fa fa-phone"></i>
+                    <p>+55 11-947889435</p>
+                </div>
+                <div>
+                    <i class="fa fa-envelope"></i>
+                    <p><a href="projetoindie2019@gmail.com">projetoindie2019@gmail.com</a></p>
+                </div>
             </div>
-            <div>
-                <i class="fa fa-envelope"></i>
-                <p><a href="projetoindie2019@gmail.com">projetoindie2019@gmail.com</a></p>
+            <div class="footer-right">
+                <p class="footer-company-about">
+                    <span>Sobre a empresa</span>
+                    O Music Land é uma plataforma web de divulgação de artistas independente.
+                </p>
+                <div class="footer-icons">
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                    <a href="#"><i class="fa fa-instagram"></i></a>
+                </div>
             </div>
-        </div>
-        <div class="footer-right">
-            <p class="footer-company-about">
-                <span>Sobre a empresa</span>
-                O Music Land é uma plataforma web de divulgação de artistas independente.
-            </p>
-            <div class="footer-icons">
-                <a href="#"><i class="fa fa-facebook"></i></a>
-                <a href="#"><i class="fa fa-twitter"></i></a>
-                <a href="#"><i class="fa fa-instagram"></i></a>
-            </div>
-        </div>
-    </footer>
+        </footer>
 
 </body>
 <script type="text/javascript" src="../node_modules/jquery/dist/jquery.min.js"></script>

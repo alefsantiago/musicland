@@ -26,13 +26,12 @@
         <div class="row">
             <div class="col-md-4 order-md-2 mb-4">
                 <div class="lottie">
-                    <lottie-player src="https://assets3.lottiefiles.com/packages/lf20_9eLZ98.json"
-                        background="transparent" speed="1" loop autoplay></lottie-player>
+                    <lottie-player src="https://assets3.lottiefiles.com/packages/lf20_9eLZ98.json" background="transparent" speed="1" loop autoplay></lottie-player>
                 </div>
             </div>
             <div class="col-md-8 order-md-1">
                 <h4 class="mb-3">Dados Pessoais</h4>
-                <form class="needs-validation" novalidate>
+                <form action="" method="POST">
                     <div class="row">
                         <div class="col-md-6 mb-3">
                             <label for="firstName">Nome de usuário</label>
@@ -47,21 +46,24 @@
                         <label for="email">Email</label>
                         <input type="email" class="form-control" id="email" placeholder="you@example.com" required>
                         <div class="invalid-feedback">
-                            Digite sua senha.
+                            Digite seu email.
                         </div>
                     </div>
 
                     <div class="mb-3">
                         <label for="address">Senha</label>
-                        <input type="text" class="form-control" id="address" placeholder="123456" required>
+                        <input type="password" class="form-control" name="senha" id="password" placeholder="123456" required>
                         <div class="invalid-feedback">
-                            Digite sua senha novamente.
+                            Digite sua senha.
                         </div>
                     </div>
 
                     <div class="mb-3">
                         <label for="address2">Confirmar senha</label>
-                        <input type="text" class="form-control" id="address2" placeholder="123456" required>
+                        <input type="password" class="form-control" name="confirmar senha" id="confirm_password" placeholder="123456" required>
+                        <div class="invalid-feedback">
+                            Digite sua senha novamente.
+                        </div>
                     </div>
 
                     <hr class="mb-4">
@@ -74,8 +76,7 @@
                     </div>
 
                     <!-- Modal -->
-                    <div class="modal fade" id="modalExemplo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-                    aria-hidden="true">
+                    <div class="modal fade" id="modalExemplo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                         <div class="modal-dialog">
                             <div class="modal-content">
                                 <div class="modal-header">
@@ -85,12 +86,12 @@
                                     </button>
                                 </div>
                                 <div class="modal-body">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                                    Architecto error rerum eligendi nostrum magnam voluptatem 
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Architecto error rerum eligendi nostrum magnam voluptatem
                                     doloremque quos, aliquid ratione expedita dolores distinctio
                                     aut placeat nesciunt. Doloribus quaerat dolor veritatis repudiandae.
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                                    Architecto error rerum eligendi nostrum magnam voluptatem 
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Architecto error rerum eligendi nostrum magnam voluptatem
                                     doloremque quos, aliquid ratione expedita dolores distinctio
                                     aut placeat nesciunt. Doloribus quaerat dolor veritatis repudiandae.
                                 </div>
@@ -108,6 +109,8 @@
 
 
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
+
 </body>
 <script type="text/javascript" src="../node_modules/jquery/dist/jquery.min.js"></script>
 <script type="text/javascript" src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
