@@ -32,6 +32,7 @@
             </div>
             <div class="col-md-8 order-md-1">
                 <h4 class="mb-3">Dados Pessoais</h4>
+                
                 <form class="needs-validation" novalidate>
                     <div class="row">
                         <div class="col-md-6 mb-3">

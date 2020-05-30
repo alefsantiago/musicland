@@ -142,10 +142,9 @@ $note = $_REQUEST['note'];
     <br>
     <br>
     <p id="text-contato">
-        Lorem ipsum, dolor sit amet consectetur.
-        perspiciatis! Alias consequuntur, totam incidunt numquam,
-        voluptatem qui dolor ab harum facere molestias veritatis, <br>
-        fuga repellat est earum. Suscipit, accusantium!
+        Se houver algum problema entre contato conosco
+        e tambem se houver algum problema de bug ou algo incorreto, <br>
+        e tambem deixe o seu feedback do que acho da plataforma.
     </p>
     <br>
     <br>
@@ -176,56 +175,57 @@ $note = $_REQUEST['note'];
             </div>
         </form>
     </div>
-        <br>
-        <br>
-        <footer class="footer-distributed">
 
-            <div class="footer-left">
-                <img src="../img/Logotipo Oficial.png">
-                <h3>Music<span>Land</span></h3>
+    <br>
+    <br>
+    <footer class="footer-distributed">
 
-                <p class="footer-links">
-                    <a href="../index.php">Início</a>
-                    |
-                    <a href="../view/quemsomos.php">Quem Somos</a>
-                    |
-                    <a href="#">Planos</a>
-                    |
-                    <a href="../view/contato.php">Contato</a>
-                </p>
+        <div class="footer-left">
+            <img src="../img/Logotipo Oficial.png">
+            <h3>Music<span>Land</span></h3>
 
-                <p class="footer-company-name">© Musicland.com | Designed by Alef Santiago</p>
+            <p class="footer-links">
+                <a href="../index.php">Início</a>
+                |
+                <a href="../view/quemsomos.php">Quem Somos</a>
+                |
+                <a href="#">Planos</a>
+                |
+                <a href="../view/contato.php">Contato</a>
+            </p>
+
+            <p class="footer-company-name">© Musicland.com | Designed by Alef Santiago</p>
+        </div>
+
+        <div class="footer-center">
+            <div>
+                <i class="fa fa-map-marker"></i>
+                <p><span>866 - R. Cámbara Orli,
+                        Jardim Miray, Itaquaquecetuba-sp</span>
+                    08574-150</p>
             </div>
 
-            <div class="footer-center">
-                <div>
-                    <i class="fa fa-map-marker"></i>
-                    <p><span>866 - R. Cámbara Orli,
-                            Jardim Miray, Itaquaquecetuba-sp</span>
-                        08574-150</p>
-                </div>
-
-                <div>
-                    <i class="fa fa-phone"></i>
-                    <p>+55 11-947889435</p>
-                </div>
-                <div>
-                    <i class="fa fa-envelope"></i>
-                    <p><a href="projetoindie2019@gmail.com">projetoindie2019@gmail.com</a></p>
-                </div>
+            <div>
+                <i class="fa fa-phone"></i>
+                <p>+55 11-947889435</p>
             </div>
-            <div class="footer-right">
-                <p class="footer-company-about">
-                    <span>Sobre a empresa</span>
-                    O Music Land é uma plataforma web de divulgação de artistas independente.
-                </p>
-                <div class="footer-icons">
-                    <a href="#"><i class="fa fa-facebook"></i></a>
-                    <a href="#"><i class="fa fa-twitter"></i></a>
-                    <a href="#"><i class="fa fa-instagram"></i></a>
-                </div>
+            <div>
+                <i class="fa fa-envelope"></i>
+                <p><a href="projetoindie2019@gmail.com">projetoindie2019@gmail.com</a></p>
             </div>
-        </footer>
+        </div>
+        <div class="footer-right">
+            <p class="footer-company-about">
+                <span>Sobre a empresa</span>
+                O Music Land é uma plataforma web de divulgação de artistas independente.
+            </p>
+            <div class="footer-icons">
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
 
 </body>
 <script type="text/javascript" src="../node_modules/jquery/dist/jquery.min.js"></script>

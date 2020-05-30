@@ -31,11 +31,14 @@
             </div>
             <div class="col-md-8 order-md-1">
                 <h4 class="mb-3">Dados Pessoais</h4>
-                <form action="" method="POST">
+
+
+
+                <form class="needs-validation" action="../model/users-cadastro.php" method="POST" novalidate>
                     <div class="row">
                         <div class="col-md-6 mb-3">
-                            <label for="firstName">Nome de usuário</label>
-                            <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+                            <label for="nome">Nome de usuário</label>
+                            <input type="text" class="form-control" id="nome" placeholder="user_new" value="" required>
                             <div class="invalid-feedback">
                                 O nome de usuário é obrigatório.
                             </div>
@@ -44,7 +47,7 @@
 
                     <div class="mb-3">
                         <label for="email">Email</label>
-                        <input type="email" class="form-control" id="email" placeholder="you@example.com" required>
+                        <input type="email" class="form-control" autocomplete="username" id="email" placeholder="you@example.com" required>
                         <div class="invalid-feedback">
                             Digite seu email.
                         </div>
@@ -52,7 +55,7 @@
 
                     <div class="mb-3">
                         <label for="address">Senha</label>
-                        <input type="password" class="form-control" name="senha" id="password" placeholder="123456" required>
+                        <input type="password" class="form-control" autocomplete="new-password" name="senha" id="password" placeholder="123456" required>
                         <div class="invalid-feedback">
                             Digite sua senha.
                         </div>
@@ -60,7 +63,7 @@
 
                     <div class="mb-3">
                         <label for="address2">Confirmar senha</label>
-                        <input type="password" class="form-control" name="confirmar senha" id="confirm_password" placeholder="123456" required>
+                        <input type="password" class="form-control" autocomplete="new-password" name="confirmar senha" id="confirm_password" placeholder="123456" required>
                         <div class="invalid-feedback">
                             Digite sua senha novamente.
                         </div>
@@ -110,7 +113,19 @@
 
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 
-
+    <?php
+    if ($_POST) {
+        $senha = $_POST['senha'];
+        $senhaConfirma = $_POST['confirmar senha'];
+        if ($senha == "") {
+            $mensagem = "<span class='aviso'><b>Aviso</b>: Senha não foi alterada!</span>";
+        } else if ($senha == $senhaConfirma) {
+            $mensagem = "<span class='sucesso'><b>Sucesso</b>: As senhas são iguais: " . $senha . "</span>";
+        } else {
+            $mensagem = "<span class='erro'><b>Erro</b>: As senhas não conferem!</span>";
+        }
+    }
+    ?>
 </body>
 <script type="text/javascript" src="../node_modules/jquery/dist/jquery.min.js"></script>
 <script type="text/javascript" src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
