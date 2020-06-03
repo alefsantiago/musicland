@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-br">
 
 <head>
@@ -87,7 +88,7 @@
           <a class="nav-link" href="pages/quemsomos.php">Quem Somos</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Planos</a>
+          <a class="nav-link" href="pages/plano.php">Planos</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="pages/contato.php">Contato</a>
