@@ -14,13 +14,13 @@
 </head>
 
 <body class="text-center">
-    <form class="form-signin">
+    <form class="form-signin" action="../model/logar.php" method="POST">
         <img class="mb-4" src="../img/Logotipo Oficial.png" alt="" width="150" height="150">
         <h1 class="h3 mb-3 font-weight-normal">Logar</h1>
-        <label for="inputEmail" class="sr-only">Email</label>
-        <input type="email" autocomplete="username" id="inputEmail" class="form-control" placeholder="Email" required autofocus>
+        <label for="email" class="sr-only">Email</label>
+        <input type="email" autocomplete="username" name="email" class="form-control" placeholder="Email" required autofocus>
         <label for="inputPassword" class="sr-only">Senha</label>
-        <input type="password" autocomplete="current-password" id="inputPassword" class="form-control" placeholder="Senha" required>
+        <input type="password" autocomplete="current-password" name="senha" class="form-control" placeholder="Senha" required>
         <div class="checkbox mb-3">
             <label>
                 <a href="">Esqueceu sua senha?</a>

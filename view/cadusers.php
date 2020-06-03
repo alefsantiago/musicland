@@ -38,7 +38,7 @@
                     <div class="row">
                         <div class="col-md-6 mb-3">
                             <label for="nome">Nome de usuário</label>
-                            <input type="text" class="form-control" id="nome" placeholder="user_new" value="" required>
+                            <input type="text" class="form-control" name="nome" placeholder="user_novo" value="" required>
                             <div class="invalid-feedback">
                                 O nome de usuário é obrigatório.
                             </div>
@@ -47,7 +47,7 @@
 
                     <div class="mb-3">
                         <label for="email">Email</label>
-                        <input type="email" class="form-control" autocomplete="username" id="email" placeholder="you@example.com" required>
+                        <input type="email" class="form-control" autocomplete="username" name="email" placeholder="you@example.com" required>
                         <div class="invalid-feedback">
                             Digite seu email.
                         </div>

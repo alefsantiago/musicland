@@ -31,46 +31,49 @@
             </div>
             <div class="col-md-8 order-md-1">
                 <h4 class="mb-3">Dados Pessoais</h4>
-                <form class="needs-validation" novalidate>
+                <form class="needs-validation" action="../model/grav-cadastro.php" method="POST" novalidate>
                     <div class="row">
                         <div class="col-md-6 mb-3">
-                            <label for="firstName">Nome da gravadora</label>
-                            <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+                            <label for="gravadora">Nome da gravadora</label>
+                            <input type="text" class="form-control" name="gravadora" placeholder="" value="" required>
                             <div class="invalid-feedback">
-                                O nome do Artista/banda é obrigatório.
+                                O nome da empresa é obrigatório.
                             </div>
                         </div>
                     </div>
 
                     <div class="row">
                         <div class="col-md-6 mb-3">
-                            <label for="firstName">Cnpj</label>
-                            <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+                            <label for="cnpj">Cnpj</label>
+                            <input type="number" class="form-control" name="cnpj" value="" required>
                             <div class="invalid-feedback">
-                               cnpj é obrigatório.
+                                cnpj é obrigatório.
                             </div>
                         </div>
                     </div>
 
                     <div class="mb-3">
                         <label for="email">Email</label>
-                        <input type="email" class="form-control" id="email" placeholder="you@example.com" required>
+                        <input type="email" class="form-control" autocomplete="useremail" name="email" placeholder="you@example.com" required>
+                        <div class="invalid-feedback">
+                            Digite seu email.
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="senha">Senha</label>
+                        <input type="password" class="form-control" autocomplete="new-password" name="senha" placeholder="123456" required>
                         <div class="invalid-feedback">
                             Digite sua senha.
                         </div>
                     </div>
 
                     <div class="mb-3">
-                        <label for="address">Senha</label>
-                        <input type="text" class="form-control" id="address" placeholder="123456" required>
+                        <label for="confimar senha">Confirmar senha</label>
+                        <input type="password" class="form-control" autocomplete="new-password" name="confimar senha" placeholder="123456" required>
                         <div class="invalid-feedback">
                             Digite sua senha novamente.
                         </div>
-                    </div>
-
-                    <div class="mb-3">
-                        <label for="address2">Confirmar senha</label>
-                        <input type="text" class="form-control" id="address2" placeholder="123456" required>
                     </div>
 
 
@@ -116,6 +119,20 @@
     </div>
     <br>
 
+
+    <?php
+    if ($_POST) {
+        $senha = $_POST['senha'];
+        $senhaConfirma = $_POST['confirmar senha'];
+        if ($senha == "") {
+            $mensagem = "<span class='aviso'><b>Aviso</b>: Senha não foi alterada!</span>";
+        } else if ($senha == $senhaConfirma) {
+            $mensagem = "<span class='sucesso'><b>Sucesso</b>: As senhas são iguais: " . $senha . "</span>";
+        } else {
+            $mensagem = "<span class='erro'><b>Erro</b>: As senhas não conferem!</span>";
+        }
+    }
+    ?>
 
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 </body>

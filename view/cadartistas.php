@@ -26,18 +26,17 @@
         <div class="row">
             <div class="col-md-4 order-md-2 mb-4">
                 <div class="lottie">
-                    <lottie-player src="https://assets3.lottiefiles.com/packages/lf20_xNAV0g.json"
-                        background="transparent" speed="1" loop autoplay></lottie-player>
+                    <lottie-player src="https://assets3.lottiefiles.com/packages/lf20_xNAV0g.json" background="transparent" speed="1" loop autoplay></lottie-player>
                 </div>
             </div>
             <div class="col-md-8 order-md-1">
                 <h4 class="mb-3">Dados Pessoais</h4>
-                
-                <form class="needs-validation" novalidate>
+
+                <form class="needs-validation" action="../model/art-cadastro.php" method="POST" novalidate>
                     <div class="row">
                         <div class="col-md-6 mb-3">
-                            <label for="firstName">Artista/Nome da banda</label>
-                            <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+                            <label for="musico">Artista/Nome da banda</label>
+                            <input type="text" class="form-control" name="musico" placeholder="" value="" required>
                             <div class="invalid-feedback">
                                 O nome do Artista/banda é obrigatório.
                             </div>
@@ -45,41 +44,30 @@
                     </div>
 
                     <div class="mb-3">
-                        <label for="username">Nome de usuário</label>
-                        <div class="input-group">
-                            <input type="text" class="form-control" id="username" placeholder="Nome de usuário"
-                                required>
-                            <div class="invalid-feedback" style="width: 100%;">
-                                Seu nome de usuário é obrigatório.
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="mb-3">
                         <label for="email">Email</label>
-                        <input type="email" class="form-control" id="email" placeholder="you@example.com" required>
+                        <input type="email" class="form-control" name="email" placeholder="you@example.com" required>
                         <div class="invalid-feedback">
                             Digite sua senha.
                         </div>
                     </div>
 
                     <div class="mb-3">
-                        <label for="address">Senha</label>
-                        <input type="text" class="form-control" id="address" placeholder="123456" required>
+                        <label for="senha">Senha</label>
+                        <input type="password" class="form-control" name="senha" placeholder="123456" required>
                         <div class="invalid-feedback">
                             Digite sua senha novamente.
                         </div>
                     </div>
 
                     <div class="mb-3">
-                        <label for="address2">Confirmar senha</label>
-                        <input type="text" class="form-control" id="address2" placeholder="123456" required>
+                        <label for="confimar senha">Confirmar senha</label>
+                        <input type="password" class="form-control" name="confimar senha" placeholder="123456" required>
                     </div>
 
                     <div class="row">
                         <div class="col-md-5 mb-3">
                             <label for="country">País</label>
-                            <select class="custom-select d-block w-100" id="country" required>
+                            <select class="custom-select d-block w-100" name="country" required>
                                 <option value="">Escolher...</option>
                                 <option>Brasil</option>
                                 <option>Argentina</option>
@@ -106,8 +94,7 @@
                     </div>
 
                     <!-- Modal -->
-                    <div class="modal fade" id="modalExemplo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-                    aria-hidden="true">
+                    <div class="modal fade" id="modalExemplo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                         <div class="modal-dialog">
                             <div class="modal-content">
                                 <div class="modal-header">
@@ -117,12 +104,12 @@
                                     </button>
                                 </div>
                                 <div class="modal-body">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                                    Architecto error rerum eligendi nostrum magnam voluptatem 
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Architecto error rerum eligendi nostrum magnam voluptatem
                                     doloremque quos, aliquid ratione expedita dolores distinctio
                                     aut placeat nesciunt. Doloribus quaerat dolor veritatis repudiandae.
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                                    Architecto error rerum eligendi nostrum magnam voluptatem 
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Architecto error rerum eligendi nostrum magnam voluptatem
                                     doloremque quos, aliquid ratione expedita dolores distinctio
                                     aut placeat nesciunt. Doloribus quaerat dolor veritatis repudiandae.
                                 </div>
@@ -138,6 +125,20 @@
     </div>
     <br>
 
+
+    <?php
+    if ($_POST) {
+        $senha = $_POST['senha'];
+        $senhaConfirma = $_POST['confirmar senha'];
+        if ($senha == "") {
+            $mensagem = "<span class='aviso'><b>Aviso</b>: Senha não foi alterada!</span>";
+        } else if ($senha == $senhaConfirma) {
+            $mensagem = "<span class='sucesso'><b>Sucesso</b>: As senhas são iguais: " . $senha . "</span>";
+        } else {
+            $mensagem = "<span class='erro'><b>Erro</b>: As senhas não conferem!</span>";
+        }
+    }
+    ?>
 
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 </body>
