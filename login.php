@@ -14,26 +14,22 @@
 </head>
 
 <body class="text-center">
-    <form class="form-signin">
-        <img class="mb-4" src="../img/Logotipo Oficial.png" alt="" width="172" height="172">
-        <h1 class="h3 mb-3 font-weight-normal">login</h1>
-        <label for="inputEmail" class="sr-only">Email</label>
-        <input type="email" id="inputEmail" class="form-control" placeholder="Email" required autofocus>
+    <form class="form-signin" action="../model/logar.php" method="POST">
+        <img class="mb-4" src="../img/Logotipo Oficial.png" alt="" width="150" height="150">
+        <h1 class="h3 mb-3 font-weight-normal">Logar</h1>
+        <label for="email" class="sr-only">Email</label>
+        <input type="email" autocomplete="username" name="email" class="form-control" placeholder="Email" required autofocus>
         <label for="inputPassword" class="sr-only">Senha</label>
-        <input type="password" id="inputPassword" class="form-control" placeholder="Senha" required>
+        <input type="password" autocomplete="current-password" name="senha" class="form-control" placeholder="Senha" required>
         <div class="checkbox mb-3">
             <label>
-                <a href="">Esqueci minha senha.</a>
+                <a href="">Esqueceu sua senha?</a>
             </label>
         </div>
         <button class="btn btn-lg btn-primary btn-block" type="submit">Entrar</button>
         <p class="mt-5 mb-3 text-muted">&copy; 2019-2020</p>
     </form>
 
-    <?php 
-     
-    
-    ?>
 </body>
 <script type="text/javascript" src="../node_modules/jquery/dist/jquery.min.js"></script>
 <script type="text/javascript" src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>

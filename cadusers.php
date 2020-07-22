@@ -5,38 +5,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Music Land</title>
-    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../node_modules/animate.css/animate.min.css">
-    <link rel="stylesheet" href="../node_modules/ladda/dist/ladda-themeless.min.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/animate.css/animate.min.css">
+    <link rel="stylesheet" href="node_modules/ladda/dist/ladda-themeless.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="../css/cadusers.css">
-    <link rel="shortcut icon" href="../img/Logotipo Oficial.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/cadusers.css">
+    <link rel="shortcut icon" href="img/Logotipo Oficial.png" type="image/x-icon">
 </head>
 
 <body>
     <div class="container">
         <div class="py-5 text-center">
-            <img class="d-block mx-auto mb-4" src="../img/Logotipo Oficial.png" alt="">
+            <img class="d-block mx-auto mb-4" src="img/Logotipo Oficial.png" alt="">
             <h2>Cadastro do usuário</h2>
-            <p class="lead">Below is an example form built entirely with Bootstrap's form controls. Each required form
-                group has a validation state that can be triggered by attempting to submit the form without completing
-                it.</p>
+            <p class="lead">Com o Cadastro de fã você pode conhecer novos artistas e acompanhar o trabalho deles, vendo Futuros Show ou Eventos que eles estão presentes</p>
         </div>
 
         <div class="row">
             <div class="col-md-4 order-md-2 mb-4">
                 <div class="lottie">
-                    <lottie-player src="https://assets3.lottiefiles.com/packages/lf20_9eLZ98.json"
-                        background="transparent" speed="1" loop autoplay></lottie-player>
+                    <lottie-player src="https://assets3.lottiefiles.com/packages/lf20_9eLZ98.json" background="transparent" speed="1" loop autoplay></lottie-player>
                 </div>
             </div>
             <div class="col-md-8 order-md-1">
                 <h4 class="mb-3">Dados Pessoais</h4>
-                <form class="needs-validation" novalidate>
+
+
+
+                <form class="needs-validation" action="model/dale.php" method="POST" enctype="multipart/form-data">
                     <div class="row">
                         <div class="col-md-6 mb-3">
-                            <label for="firstName">Nome de usuário</label>
-                            <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+                            <label for="nome">Nome de usuário</label>
+                            <input type="text" class="form-control" name="nomeUsu" placeholder="Ex: Thiago.." value="" required>
                             <div class="invalid-feedback">
                                 O nome de usuário é obrigatório.
                             </div>
@@ -45,23 +45,38 @@
 
                     <div class="mb-3">
                         <label for="email">Email</label>
-                        <input type="email" class="form-control" id="email" placeholder="you@example.com" required>
+                        <input type="email" class="form-control" name="emailUsu" placeholder="examplo@exemplo.com" value="" required>
+                        <div class="invalid-feedback">
+                            Digite seu email.
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="address">Senha</label>
+                        <input type="password" class="form-control" autocomplete="new-password" name="senhaUsu" id="password" placeholder="**********" required>
                         <div class="invalid-feedback">
                             Digite sua senha.
                         </div>
                     </div>
 
                     <div class="mb-3">
-                        <label for="address">Senha</label>
-                        <input type="text" class="form-control" id="address" placeholder="123456" required>
+                        <label for="address2">Confirmar senha</label>
+                        <input type="password" class="form-control" autocomplete="new-password" name="confSenha" id="confirm_password" placeholder="**********" required>
                         <div class="invalid-feedback">
                             Digite sua senha novamente.
                         </div>
+
+                        <br>
+                        <h4> Coloque uma Foto sua</h4>
+                        <input type="file" class="form-control-file" name="fotoUsu" value="fotoUsu">
                     </div>
 
-                    <div class="mb-3">
-                        <label for="address2">Confirmar senha</label>
-                        <input type="text" class="form-control" id="address2" placeholder="123456" required>
+
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">Conte um pouco sobre você</span>
+                        </div>
+                        <textarea class="form-control" name="descUsu"></textarea>
                     </div>
 
                     <hr class="mb-4">
@@ -74,8 +89,7 @@
                     </div>
 
                     <!-- Modal -->
-                    <div class="modal fade" id="modalExemplo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-                    aria-hidden="true">
+                    <div class="modal fade" id="modalExemplo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                         <div class="modal-dialog">
                             <div class="modal-content">
                                 <div class="modal-header">
@@ -85,12 +99,12 @@
                                     </button>
                                 </div>
                                 <div class="modal-body">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                                    Architecto error rerum eligendi nostrum magnam voluptatem 
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Architecto error rerum eligendi nostrum magnam voluptatem
                                     doloremque quos, aliquid ratione expedita dolores distinctio
                                     aut placeat nesciunt. Doloribus quaerat dolor veritatis repudiandae.
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                                    Architecto error rerum eligendi nostrum magnam voluptatem 
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Architecto error rerum eligendi nostrum magnam voluptatem
                                     doloremque quos, aliquid ratione expedita dolores distinctio
                                     aut placeat nesciunt. Doloribus quaerat dolor veritatis repudiandae.
                                 </div>
@@ -99,7 +113,7 @@
                     </div>
 
                     <hr class="mb-4">
-                    <button class="btn btn-primary btn-lg btn-block" type="submit">Confirmar</button>
+                    <button class="btn btn-primary btn-lg btn-block" type="submit" name="U">Confirmar</button>
                 </form>
             </div>
         </div>
@@ -109,11 +123,11 @@
 
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 </body>
-<script type="text/javascript" src="../node_modules/jquery/dist/jquery.min.js"></script>
-<script type="text/javascript" src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="../node_modules/jquery-validation/dist/jquery.validate.min.js"></script>
-<script type="text/javascript" src="../node_modules/ladda/dist/ladda.min.js"></script>
-<script type="text/javascript" src="../node_modules/ladda/dist/spin.min.js"></script>
-<script type="text/javascript" src="../js/cadusers.js"></script>
+<script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
+<script type="text/javascript" src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="node_modules/jquery-validation/dist/jquery.validate.min.js"></script>
+<script type="text/javascript" src="node_modules/ladda/dist/ladda.min.js"></script>
+<script type="text/javascript" src="node_modules/ladda/dist/spin.min.js"></script>
+<script type="text/javascript" src="js/cadusers.js"></script>
 
 </html>

@@ -5,9 +5,4 @@ $('.carousel').carousel({
 
 $('#meuModal').modal({
     keyboard: true
-})
-
-
-
-
-
+});
