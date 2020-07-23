@@ -38,25 +38,10 @@
         <li class="nav-item">
           <a class="scroll nav-link" href="#qmsomos">Quem Somos</a>
         </li>
-        <!-- <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Gêneros
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#">Rock</a>
-            <a class="dropdown-item" href="#">Funk</a>
-            <a class="dropdown-item" href="#">Pop</a>
-            <a class="dropdown-item" href="#">Hip-hop/Rap</a>
-            <a class="dropdown-item" href="#">Sertanejo</a>
-            <a class="dropdown-item" href="#">Pagode</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Ver todos</a>
-          </div>
-        </li> -->
       </ul>
       <div class="btn-sign">
         <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#modalExemplo">Inscreva-se</button>
-        <button type="button" data-toggle="modal" data-target="#exampleModalCenter" class="btn btn-outline-primary">Entrar</button>
+        <button type="button" data-toggle="modal" data-target="#modalExemplo2" class="btn btn-outline-primary">Entrar</button>
       </div>
     </div>
   </nav>
@@ -68,7 +53,6 @@
             <div class="intro-text">
               <h1>Music Land</h1>
               <p>Bem Vindos á Revolução da Musica</p>
-              <!-- <a href="#about" class="btn btn-custom btn-lg page-scroll">Discover Story</a> -->
             </div>
           </div>
         </div>
@@ -84,75 +68,6 @@
     </blockquote>
   </div>
   <br>
-  <!-- 
-  <div class="row mb-2">
-    <div class="col-md-6">
-      <div class="card flex-md-row mb-4 box-shadow h-md-250">
-        <div class="card-body d-flex flex-column align-items-start">
-          <strong class="d-inline-block mb-2 text-primary">World</strong>
-          <h3 class="mb-0">
-            <a class="text-dark" href="#">Destaque</a>
-          </h3>
-          <div class="mb-1 text-muted">Jun 1</div>
-          <p class="card-text mb-auto">Lançamento da primeira versão do website Music Land,
-            venha conhecer as novidades que a plataforma traz.
-          </p>
-          <a href="#">Continue Lendo</a>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-6">
-      <div class="card flex-md-row mb-4 box-shadow h-md-250">
-        <div class="card-body d-flex flex-column align-items-start">
-          <strong class="d-inline-block mb-2 text-success">Design</strong>
-          <h3 class="mb-0">
-            <a class="text-dark" href="#">Lorem Ipsum</a>
-          </h3>
-          <div class="mb-1 text-muted">Jun 1</div>
-          <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to
-            additional content.</p>
-          <a href="#">Continue reading</a>
-        </div>
-      </div>
-    </div>
-  </div>
-  </div>
-
-
-  <div class="row mb-2">
-    <div class="col-md-6">
-      <div class="card flex-md-row mb-4 box-shadow h-md-250">
-        <div class="card-body d-flex flex-column align-items-start">
-          <strong class="d-inline-block mb-2 text-primary">World</strong>
-          <h3 class="mb-0">
-            <a class="text-dark" href="#">Destaque</a>
-          </h3>
-          <div class="mb-1 text-muted">jun 1</div>
-          <p class="card-text mb-auto">Lançamento da primeira versão do website Music Land,
-            venha conhecer as novidades que a plataforma traz.
-          </p>
-          <a href="#">Continue Lendo</a>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-6">
-      <div class="card flex-md-row mb-4 box-shadow h-md-250">
-        <div class="card-body d-flex flex-column align-items-start">
-          <strong class="d-inline-block mb-2 text-success">Design</strong>
-          <h3 class="mb-0">
-            <a class="text-dark" href="#">Post title</a>
-          </h3>
-          <div class="mb-1 text-muted">Nov 11</div>
-          <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to
-            additional content.</p>
-          <a href="#">Continue reading</a>
-        </div>
-      </div>
-    </div>
-  </div>
-  
-  </div> -->
-
 
   <hr style="margin-top: -20px;">
   <h1 class="alinhamento-titulo">Categorias</h1>
@@ -199,45 +114,10 @@
   </lottie-player>
   <div class="text-divulgue">
     <p style="margin-top: 200px">
-      Muitas plataformas de música independente que há no mercado, são muitas vezes voltada para o público fora do brasil, com isso muitos músicos não tem muitas opções para divulgar o seu trabalho, apenas redes sociais e streaming, com isso nós decidimos trazer um senso de comunidade para nossa plataforma e que assim construir um ambiente agradável e funcional para o artista e também para os usuários. O music land é uma plataforma intuitiva e fácil de navegar, temos perfis para o usuário, artista e também para gravadoras, assim podendo entrar em contato com os artistas.
+      Muitas plataformas de música independente que estão no mercado, são muitas vezes voltada para o público fora do brasil, com isso muitos músicos não tem muitas opções para divulgar o seu trabalho, apenas por meio das redes sociais e serviços de streaming, com isso nós decidimos trazer um senso de comunidade para nossa plataforma e que assim construir um ambiente agradável e funcional para o artista e também para os usuários. O music land é uma plataforma intuitiva e fácil de navegar, temos perfis para o usuário e artista.
     </p>
   </div>
 
-  <!-- <br>
-  <hr style="margin-top: 10px;">
-  <h1 class="alinhamento-titulo">Artistas em Destaque</h1>
-  <br>
-
-  <div class="container marketing">
-
-    <div class="row">
-      <div class="col-lg-4">
-        <img class="rounded-circle" src="img/temposdemorte.jpg" alt="Generic placeholder image" width="140" height="140" style="margin-left: 70px;">
-        <h2>Tempos de morte</h2>
-        <p>Banda formada em 2014 de Postpunk/Punk/Noise, formada pela Alê, Bruno, Fejones e Zorel,
-          São de Itapetinga interior de São Paulo.
-        </p>
-        <p><a class="btn btn-primary" href="#" role="button">Venha Conhecer &raquo;</a></p>
-      </div>
-      <div class="col-lg-4">
-        <img class="rounded-circle" src="img/ballet.png" alt="Generic placeholder image" width="140" height="140" style="margin-left: 70px;">
-        <h2>Ballet Clandestino</h2>
-        <p>Banda de Punk/ Post Punk formada pelo Vinicius Primo, Natan, Tiofrey,
-          São do centro de São Paulo.
-        </p>
-        <p><a class="btn btn-primary" href="#" role="button">Venha Conhecer &raquo;</a></p>
-      </div>
-      <br>
-      <div class="col-lg-4">
-        <img class="rounded-circle" src="img/gangue.jpg" alt="Generic placeholder image" width="140" height="140" style="margin-left: 70px;">
-        <h2>Gangue Morcego</h2>
-        <p>Banda formada em 2011 de Post-Punk/Deathrock, formada pela Alexandre Matos,
-          Thiago Halleck, Daniel Sombrio, Daniel K. e Mario Mamede.
-        </p>
-        <p><a class="btn btn-primary" href="#" role="button">Venha Conhecer &raquo;</a></p>
-      </div>
-    </div>
-  </div> -->
   <div id="plano"></div>
   <br>
   <hr style="margin-top: 10px;">
@@ -254,8 +134,10 @@
               <ul class="h6 text-left">
                 <li>Divulgar até 3 Musicas (Para Artistas)</li>
                 <li>Escutar musicas Ilimitadas</li>
-                <li>Todos os usuarios tem direito a esse plano</li>
+                <li>Todos os usuarios tem direito a esse plano.</li>
               </ul>
+              <h4>Preço:</h4>
+              <h4>Gratis</h4>
             </div>
           </div>
         </div>
@@ -270,8 +152,10 @@
               <ul class="h6 text-left">
                 <li>Divulgar quantas musicas quiser;</li>
                 <li>Garantia de estar na pagina de destaque;</li>
-                <li>Oganizar sua Pagina</li>
+                <li>Oganizar sua Pagina.</li>
               </ul>
+              <h4>Preço:</h4>
+              <h4>1.99U$</h4>
             </div>
           </div>
         </div>
@@ -332,7 +216,7 @@
   <footer class="footer-distributed">
 
     <div class="footer-left">
-      <img src="img/Logotipo Oficial.png">
+      <img src="img/logo.png">
       <h3>Music<span>Land</span></h3>
 
       <p class="footer-links">
@@ -404,22 +288,22 @@
           </p>
           <div class="btn-inscreva">
             <a href="cadartistas.php"><button type="button" class="btn btn-outline-primary">Inscreva-se para Artistas</button></a>
-          </div>
-          <hr>
+           </div>
+          <!-- <hr>
           <img class="users" src="img/record.png">
           <p id="text-users">
             Encontre novos Talentos <br>
             Divulgue seu trabalho
           </p>
           <div class="btn-inscreva">
-            <a href="cadgravadoras.php"><button type="button" class="btn btn-outline-primary">Inscreva-se para Gravadoras</button></a>
-          </div>
+            <a href="cadgravadoras.php"><button type="button" class="btn btn-outline-primary">Inscreva-se para Gravadoras</button></a> -->
+          </div> 
         </div>
       </div>
     </div>
   </div>
 
-  <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal fade" id="modalExemplo2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
       <div class="modal-content">
         <div class="modal-header">

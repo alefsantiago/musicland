@@ -31,15 +31,13 @@
                         Gênero
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Rock</a>
-                        <a class="dropdown-item" href="#">Funk</a>
-                        <a class="dropdown-item" href="#">Pop</a>
-                        <a class="dropdown-item" href="#">Hip-hop/Rap</a>
-                        <a class="dropdown-item" href="#">Sertanejo</a>
-                        <a class="dropdown-item" href="#">Pagode</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Escolhe todos</a>
-                    </div>
+                        <?php
+                        $query = "SELECT idGen,nomeGen FROM generos WHERE NOT idGen = 1 ORDER BY nomeGen ASC";
+                        $generos = mysqli_query($db_connect, $query);
+                        while ($lista = mysqli_fetch_array($generos)) {
+                            echo "<a class='dropdown-item' href='#'>" . $lista['nomeGen'] . "</a>";
+                        }
+                        ?>
                 </li>
             </ul>
             <div>
@@ -78,9 +76,8 @@
                     <div class="dropdown-menu">
                         <?php
                         if ($_SESSION['usu'] == "U") {
-                            echo "<a class='dropdown-item' href='#'>Minha Pagina</a> <div class='dropdown-divider'></div>";
-                            echo "<a class='dropdown-item' href='#'>Dados da Banda</a><div class='dropdown-divider'></div>";
-                            echo "<a class='dropdown-item' href='#'>Informações da Banda</a><div class='dropdown-divider'></div>";
+                            echo "<a class='dropdown-item' href='#'>Favoritos</a><div class='dropdown-divider'></div>";
+                            echo "<a class='dropdown-item' href='#'>Meus Dados</a><div class='dropdown-divider'></div>";
                             echo "<a class='dropdown-item' href='./desconecta.php'>Sair</a>";
                         } else {
                             echo "<a class='dropdown-item' href='#'>Minha Pagina</a>
@@ -89,7 +86,7 @@
                                     <div class='dropdown-divider'></div>
                                     <a class='dropdown-item' href='#' data-toggle='modal' data-target='#modalPlano'>Atualizar Plano</a>
                                     <div class='dropdown-divider'></div>
-                                    <a class='dropdown-item' href='#'>Meus Dados</a>
+                                    <a class='dropdown-item' href='#' data-toggle='modal' data-target='#modalDados'>Meus Dados</a>
                                     <div class='dropdown-divider'></div>
                                     <a class='dropdown-item' href='./desconecta.php'>Sair</a>";
                         }

@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <?php
-    include("controller/conexao.php");
-    ?>
+<?php
+include("controller/conexao.php");
+?>
 
 <head>
     <meta charset="UTF-8">
@@ -60,8 +60,8 @@
                         $generos = mysqli_query($db_connect, $query);
                         echo "<option value='' disabled selected>Selecione o Genero</option>";
                         while ($lista = mysqli_fetch_array($generos)) {
-                        echo "<option value='$lista[idGen]'>$lista[nomeGen]</option>";
-                        }       
+                            echo "<option value='$lista[idGen]'>$lista[nomeGen]</option>";
+                        }
                         echo "</select>";
                         ?>
                     </div>
@@ -80,8 +80,8 @@
                         <div class="invalid-feedback">
                             Digite sua senha novamente.
                         </div>
-<br>
-    <h4> Coloque uma Foto de vocês</h4>
+                        <br>
+                        <h4> Coloque uma Foto de vocês</h4>
                         <input type="file" class="form-control-file" name="fotoUsu" value="fotoUsu">
                     </div>
 

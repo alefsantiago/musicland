@@ -133,7 +133,7 @@ if (isset($_POST['U'])) {
 
 
                     $query = "INSERT INTO artista 
-                            (nomeArt, emailArt, senhaArt, fotoArt, descArt,generoBand) VALUES 
+                            (nomeArt, emailArt, senhaArt, fotoArt, descArt,idGen) VALUES 
                             ('$nome', '$email', '$senha', '$nome_imagem','$desc','$genero')";
                     $insere = mysqli_query($db_connect, $query);
                     if ($insere == 1) {
@@ -165,7 +165,7 @@ if (isset($_POST['U'])) {
     $confSenha = $_POST['confSenha'];
     $cnpj = $_POST['cnpj'];
 
-    
+
     if (!is_numeric($cnpj)) {
         echo "<script>
         alert('Não coloque Letras no Seu CNPJ');
@@ -222,7 +222,7 @@ if (isset($_POST['U'])) {
                         move_uploaded_file($foto["tmp_name"], $caminho);
                     ?>
                         <script>
-                            alert('Usuário cadastrado com sucesso');
+                            alert('Usuário cadastrado coam sucesso');
                             location.href = '../index.php';
                         </script>
                     <?php
@@ -238,28 +238,3 @@ if (isset($_POST['U'])) {
         }
     }
 }
-if (isset($_POST['Musica'])) {
-    $nomeMus = $_POST['nomeMusica'];
-    $linkMus = explode("/",$_POST['linkMusica']);
-    $linkMus = $linkMus[4];
-    $genMus = $_POST['genero'];
-    $id = $_POST['id'];
-    $query1 = "insert into musicas(nomeMusica,linkMusica,idGen,idArt,platMusica) values ($nomeMus,$linkMus,$genMus,$id,1)";
-    $insere = mysqli_query($db_connect, $query1);
-    print_r($id);
-    if ($insere == 1) {
-    ?>
-        <script>
-            alert('Musica cadastrado com sucesso');
-            // location.href = '../feed.php';
-        </script>
-    <?php
-    } else { ?>
-        <script>
-            alert('Erro no cadastro');
-            // location.href = '../feed.php';
-        </script>
-<?php
-    }
-}
-?>
