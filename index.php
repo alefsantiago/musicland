@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="css/styles.css">
   <link rel="shortcut icon" href="img/Logotipo Oficial.png" type="image/x-icon">
   <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
-  
+
 </head>
 
 <body>
@@ -80,7 +80,10 @@
     <br>
     <h1 class="alinhamento-titulo">O que é Music Land</h1>
     <blockquote class="blockquote text-center">
-      <h5 class="mb-">O Music Land é uma plataforma Web que permite a divulgação demúsicas de autoria própria de artistas<br> independentes e também permitindo conversas entre os usuários, através dessa plataforma de<br> divulgação, onde os usuários irão disponibilizar suas músicas em seu perfil que irão<br> para um feed de notícias para outros usuários verem e apreciarem.</h5>
+      <h5 class="mb-">O Music Land é uma plataforma Web que permite a divulgação demúsicas de autoria própria do artistas<br> 
+      independentes e também permitindo conversas entre os usuários, através dessa plataforma de<br> 
+      divulgação, onde os usuários irão disponibilizar suas músicas em seu perfil que irão<br> 
+      para um feed de notícias para outros usuários verem e apreciarem.</h5>
     </blockquote>
   </div>
   <br>
@@ -291,10 +294,8 @@
         <img class="img-memb" src="">
         <h3 class="titu-memb text-center">Alef</h3>
         <p class="text-memb text-center">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Nostrum non necessitatibus quos quia ipsam officia temporibus
-          corporis minus dolores, quo in obcaecati architecto,
-          possimus quaerat sit debitis impedit tempora cumque.
+          Aluno da etec de Itaquaquecetuba, <br>
+          desenvolvedor e um dos criadores do projeto music land.
         </p>
       </div>
     </div>
@@ -304,10 +305,8 @@
         <img class="img-memb" src="">
         <h3 class="titu-memb text-center">Glauco</h3>
         <p class="text-memb1 text-center">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Nostrum non necessitatibus quos quia ipsam officia temporibus
-          corporis minus dolores, quo in obcaecati architecto,
-          possimus quaerat sit debitis impedit tempora cumque.
+          Aluno da etec de Itaquaquecetuba, <br>
+          desenvolvedor e um dos criadores do projeto music land.
         </p>
       </div>
     </div>
@@ -318,10 +317,8 @@
         <img class="img-memb" src="">
         <h3 class="titu-memb text-center">Paulo</h3>
         <p class="text-memb3 text-center">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Nostrum non necessitatibus quos quia ipsam officia temporibus
-          corporis minus dolores, quo in obcaecati architecto,
-          possimus quaerat sit debitis impedit tempora cumque.
+          Aluno da etec de Itaquaquecetuba, <br>
+          desenvolvedor e um dos criadores do projeto music land.
         </p>
       </div>
     </div>
